@@ -1,0 +1,27 @@
+body {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+.container h1.display-4 {
+    color: #fff;
+    text-shadow: 2px 2px 5px #000
+}
+
+.badge {
+    font-weight: 300;
+    font-size: 1em;
+}
+
+h5 .badge {
+    font-size: .8em;
+}
+
+.box-left img {
+    max-width: 100%;
+    max-height: 100%;
+}
