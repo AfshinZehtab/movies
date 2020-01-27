@@ -8,16 +8,18 @@
 
 include_once __DIR__.'/ext/imdb.class.php';
 
+
 if(isset($_REQUEST['submit'] ))
 {
     $result = new movies();
     $result->getInput($_GET['search']);
 }
-elseif (!empty($result) || $result == '')
-{
-    echo "<h2 class='display-6' style='color: #212529'>Movie not found. 😞</h2>";
-}
 
+/**
+ * Class movies
+ * Get all movie information from IMDB API, that
+ * searched by user
+ */
 class movies
 {
     public $title, $writer, $year, $img, $rating, $ratingCount, $director, $genre, $language, $stars, $seasons, $plot, $trailer;
