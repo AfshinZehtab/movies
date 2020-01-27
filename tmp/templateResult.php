@@ -1,5 +1,13 @@
 <?php
-
+/**
+ * Created by Afshin Zehtab.
+ * User: Afshin Zehtab
+ * Date: 31.07.2019
+ * Time: 12:44
+ *
+ * Results template
+ * including in index
+ */
     if (isset($_GET['search']) && !empty($_GET['search']))
     { ?>
         <div class="content_result shadow p-3 bg-white rounded row">

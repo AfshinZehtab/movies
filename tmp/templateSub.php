@@ -4,13 +4,17 @@
  * User: Afshin Zehtab
  * Date: 31.07.2019
  * Time: 10:44
+ *
+ * Subtitle results template
+ * including in index
+ *
  */
 require_once __DIR__.'/ext/Subscene.php';
 
 echo "<h2 class='display-4 mb-5'>Subtitles</h2>";
 
 
-$subscene = new Subscene('afshinzehtab', 'afshin90005');
+$subscene = new Subscene('USERNAME', 'PASSWORD');
 $movies = $subscene->search($_GET['search']);
 
 $subscene->setLanguages(13,19,46);
